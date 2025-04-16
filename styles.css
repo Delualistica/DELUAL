@@ -54,10 +54,11 @@ body {
 
 .btn-white {
   background-color: white;
-  color: black;
+  color: black !important;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* FRASE PRINCIPAL */
