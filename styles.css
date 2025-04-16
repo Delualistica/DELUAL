@@ -1,53 +1,60 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Helvetica', sans-serif;
 }
 
-.encabezado {
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fff9e8;
-  position: sticky;
+  padding: 25px 60px;
+  position: absolute;
+  width: 100%;
   top: 0;
 }
 
-.logo {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
+.main-nav a {
+  color: white;
   text-decoration: none;
-  color: #333;
+  margin: 0 15px;
   font-weight: bold;
 }
 
-.seccion {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.main-nav .btn-white {
+  background: white;
+  color: black;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
-.fondo-arbol {
-  background-image: url('images/arbol.webp');
-  background-size: cover;
-  background-position: center;
+.hero-text {
+  position: absolute;
+  right: 60px;
+  bottom: 120px;
+  font-size: 1.1rem;
+  text-align: right;
 }
 
-.descripcion {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 1rem;
+.contact-buttons {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+}
+
+.contact-buttons p {
+  background: white;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 20px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
